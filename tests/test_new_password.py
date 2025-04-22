@@ -8,7 +8,17 @@ def test_password_characters():
     for char in password:
         assert char in valid_characters
 
+
+
+def test_paroldlina():
+    assert len(generate_password(12)) == 12
+
+
+def test_parolodin():
+    assert generate_password(12) != generate_password(12)
+
 """
+
 Допиши еще один тест из предложенных. Или придумай свой.
 Если сможешь написать больше, то будет круто!
 
